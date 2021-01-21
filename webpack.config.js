@@ -82,11 +82,11 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    noInfo: true,
+    noInfo: false,
     overlay: true
   },
   performance: {
-    hints: false
+    hints: 'warning',
   },
   devtool: '#eval-source-map'
 }

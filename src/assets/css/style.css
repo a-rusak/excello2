@@ -217,6 +217,14 @@ h6 {
     column-count: 1;
   }
 }
+@media (max-width: 639px) {
+  .page-wrapper {
+    margin-left: 0;
+  }
+  .footer {
+    left: 0;
+  }
+}
 .thumb-sm {
   height: 32px;
   width: 32px;
@@ -1448,10 +1456,6 @@ textarea {
   }
 }
 @media (max-width: 767px) {
-  .header {
-    position: fixed;
-    width: 100%;
-  }
   .header .top-navbar {
     padding-right: 15px;
     -webkit-box-orient: horizontal;

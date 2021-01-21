@@ -13,8 +13,14 @@ const store = new Vuex.Store({
   modules: {
     app
   },
-  state: {},
-  mutations: {}
+  state: {
+    isAsideOpen: false,
+  },
+  mutations: {
+    setAsisdeVisibility (state, isOpen) {
+      state.isAsideOpen = isOpen
+    }
+  }
 })
 
 export default store

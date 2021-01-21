@@ -3,11 +3,11 @@
   @change="onChange"
   :firstDayOfWeek="parseInt(2)"
   :disableDaysBeforeToday="false"
-  :defaultDate="0"
+  defaultDate="0"
   :showLunarButton="false"
   :showLunar="false"
-  :lang="en"
-  :dateLang="en"
+  lang="en"
+  dateLang="en"
   ></lunar-calendar>
 </template>
 
@@ -17,7 +17,13 @@ import LunarCalendar from 'vue-lunar-calendar'
 export default{
     components:{
         LunarCalendar
+    },
+
+  methods: {
+    onChange (...args) {
+      console.log('Lunar change with:', args)
     }
+  }
 }
 </script>
 
